@@ -1,11 +1,17 @@
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class TestCalculator {
-    private Calculator calculator;
+    private Calculator calculator = new Calculator();
 
-    @org.junit.Test
+    @Test
     public void testAddition() {
-        calculator = new Calculator();
         assertEquals(60, calculator.addition(10, 50));
+    }
+
+    @Test
+    public void subtraction() {
+        assertEquals(10, calculator.subtraction(20, 10));
     }
 }
