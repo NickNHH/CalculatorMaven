@@ -10,7 +10,6 @@ public class TestCalculator {
         assertEquals(60, calculator.addition(10, 50));
     }
 
-
     @Test
     public void subtraction() {
         assertEquals(10, calculator.subtraction(20, 10));
