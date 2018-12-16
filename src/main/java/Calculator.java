@@ -1,6 +1,6 @@
 class Calculator {
 
-    void addition(int firstNumber, int secondNumber, int result) {
-
+    int addition(int firstNumber, int secondNumber) {
+        return firstNumber + secondNumber;
     }
 }
