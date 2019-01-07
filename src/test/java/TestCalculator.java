@@ -33,7 +33,7 @@ public class TestCalculator {
     }
 
     @Test
-    public void testDivisionByZeroNotRaised() throws ArithmeticException {
-        assertEquals(0, calculator.division(10, 0));
+    public void testDivisionByZeroNotRaised() throws StackOverflowError {
+        assertEquals(10, calculator.division(10, 1));
     }
 }
