@@ -15,5 +15,6 @@ public class CalculatorApp {
         System.out.println("Summe: " + value1 +  " + " + value2 + " = " + calculator.addition(value1, value2));
         System.out.println("Differenz: " + value1 + " + " + value2 + " = " + calculator.subtraction(value1, value2));
         System.out.println("Quotient: " + value1 + " + " + value2 + " = " + calculator.division(value1, value2));
+        System.out.println("Produkt: " + value1 + " * " + value2 + " = " + calculator.multiplication(value1, value2));
     }
 }

@@ -11,4 +11,8 @@ class Calculator {
     int division(int firstNumber, int secondNumber) {
         return firstNumber / secondNumber;
     }
+
+    int multiplication(int firstNumber, int secondNumber) {
+        return firstNumber * secondNumber;
+    }
 }
