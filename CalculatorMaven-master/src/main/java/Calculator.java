@@ -8,7 +8,7 @@ class Calculator {
         return firstNumber - secondNumber;
     }
 
-    int division(int firstNumber, int secondNumber) {
+    double division(double firstNumber, double secondNumber) {
         return firstNumber / secondNumber;
     }
 

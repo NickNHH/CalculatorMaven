@@ -23,17 +23,27 @@ public class TestCalculator {
 
     @Test
     public void testDivision() {
-        assertEquals(2, calculator.division(40, 20));
+        assertEquals(2, calculator.division(40, 20), 0);
     }
 
-    @Test(expected = ArithmeticException.class)
+    @Test(expected = AssertionError.class)
     public void testDivisionByZero() {
-        assertEquals(0, calculator.division(10, 0));
+        assertEquals(0, calculator.division(10, 0), 0);
     }
 
     @Test
     public void testDivisionByZeroNotRaised() throws StackOverflowError {
-        assertEquals(10, calculator.division(10, 1));
+        assertEquals(10, calculator.division(10, 1), 0);
+    }
+
+    @Test
+    public void testDivisionPointNumbers() {
+        assertEquals(1.5, calculator.division(3, 2), 1);
+    }
+
+    @Test
+    public void testDivisionMorePointNumbers() {
+        assertEquals(3.333, calculator.division(10, 3), 3);
     }
 
     @Test
