@@ -1,20 +1,11 @@
 public class CalculatorApp {
 
     public static void main(String[] args) {
+        Controller controller = new Controller();
 
-        Calculator calculator = new Calculator();
-        int value1;
-        int value2;
-
-        System.out.println("Console Calculator");
-        System.out.println("==================");
-        System.out.println();
-
-        value1 = 10;
-        value2 = 20;
-        System.out.println("Summe: " + value1 +  " + " + value2 + " = " + calculator.addition(value1, value2));
-        System.out.println("Differenz: " + value1 + " - " + value2 + " = " + calculator.subtraction(value1, value2));
-        System.out.println("Quotient: " + value1 + " / " + value2 + " = " + calculator.division(value1, value2));
-        System.out.println("Produkt: " + value1 + " * " + value2 + " = " + calculator.multiplication(value1, value2));
+        controller.printMenu();
+        controller.getInputs();
+        controller.prepareCalculations();
+        controller.printResult();
     }
 }
