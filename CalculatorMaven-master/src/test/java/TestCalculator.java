@@ -35,4 +35,19 @@ public class TestCalculator {
     public void testDivisionByZeroNotRaised() throws StackOverflowError {
         assertEquals(10, calculator.division(10, 1));
     }
+
+    @Test
+    public void testMultiplication() {
+        assertEquals(100, calculator.multiplication(10, 10));
+    }
+
+    @Test
+    public void testMultiplicationWithZero() {
+        assertEquals(0, calculator.multiplication(1000, 0));
+    }
+
+    @Test
+    public void testMultiplicationWithNegatives() {
+        assertEquals(25, calculator.multiplication(-5, -5));
+    }
 }
