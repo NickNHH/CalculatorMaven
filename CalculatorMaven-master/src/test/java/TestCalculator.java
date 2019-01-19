@@ -63,16 +63,16 @@ public class TestCalculator {
 
     @Test(expected = ArithmeticException.class)
     public void testOverflowHandlingAddition() {
-        assertEquals(2147483647, calculator.addition(2147483647, 1));
+        assertEquals(Integer.MAX_VALUE + 1, calculator.addition(2147483647, 1));
     }
 
     @Test(expected = ArithmeticException.class)
     public void testOverflowHandlingSubtraction() {
-        assertEquals(-2147483648, calculator.subtraction(-2147483648, 1));
+        assertEquals(Integer.MIN_VALUE - 1, calculator.subtraction(-2147483648, 1));
     }
 
     @Test(expected = ArithmeticException.class)
     public void testOverflowHandlingMultiplication() {
-        assertEquals(2147483647, calculator.multiplication(2147483647, 2));
+        assertEquals(Integer.MAX_VALUE * 2, calculator.multiplication(2147483647, 2));
     }
 }
