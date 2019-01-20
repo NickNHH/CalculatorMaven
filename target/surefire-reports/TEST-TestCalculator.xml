@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="TestCalculator" time="0.016" errors="0" skipped="0">
+<testsuite tests="32" failures="0" name="TestCalculator" time="0.016" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2018.3.2"/>
+    <property name="idea.version" value="2018.3.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9.0.4+11"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9.0.4\bin"/>
@@ -29,9 +29,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\tuni\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\183.4886.37\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="classworlds.conf" value="C:\Users\tuni\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\183.5153.38\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\SYSTEM\MSMAPI\1033;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Program Files\Git\cmd;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\TortoiseHg\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\PuTTY\;C:\Users\tuni\AppData\Local\Microsoft\WindowsApps;C:\Users\tuni\AppData\Local\GitHubDesktop\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\SYSTEM\MSMAPI\1033;C:\Program Files\Git\cmd;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\TortoiseHg\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\PuTTY\;C:\Ruby25-x64\bin;C:\Users\tuni\AppData\Local\Microsoft\WindowsApps;C:\Users\tuni\AppData\Local\GitHubDesktop\bin;C:\Users\tuni\AppData\Local\Microsoft\WindowsApps;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="53.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -43,10 +43,10 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="9"/>
     <property name="user.name" value="tuni"/>
-    <property name="java.class.path" value="C:\Users\tuni\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\183.4886.37\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="C:\Users\tuni\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\183.5153.38\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="9"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.3.2 install"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.3.3 install"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-9.0.4"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -55,7 +55,7 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="9.0.4"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\tuni\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\183.4886.37\plugins\maven\lib\maven3"/>
+    <property name="maven.home" value="C:\Users\tuni\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\183.5153.38\plugins\maven\lib\maven3"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
@@ -63,9 +63,36 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+  <testcase classname="TestCalculator" name="testAdditionPositives" time="0"/>
+  <testcase classname="TestCalculator" name="testOverflowHandlingMultiplication" time="0"/>
+  <testcase classname="TestCalculator" name="testMultiplicationLargeNumbers" time="0"/>
+  <testcase classname="TestCalculator" name="testDivisionNegativePositive" time="0"/>
+  <testcase classname="TestCalculator" name="testMultiplicationWithZero" time="0"/>
+  <testcase classname="TestCalculator" name="testAdditionRounding" time="0"/>
+  <testcase classname="TestCalculator" name="testMultiplicationPositiveNegative" time="0"/>
+  <testcase classname="TestCalculator" name="testAdditionNegativePositive" time="0"/>
+  <testcase classname="TestCalculator" name="testDivisionPointNumbers" time="0"/>
+  <testcase classname="TestCalculator" name="testDivisionMorePointNumbers" time="0"/>
   <testcase classname="TestCalculator" name="testDivisionByZeroNotRaised" time="0"/>
-  <testcase classname="TestCalculator" name="testAddition" time="0"/>
+  <testcase classname="TestCalculator" name="testAdditionNegatives" time="0"/>
+  <testcase classname="TestCalculator" name="testMultiplicationRounding" time="0"/>
+  <testcase classname="TestCalculator" name="testDivisionPositiveNegative" time="0"/>
+  <testcase classname="TestCalculator" name="testSubtractionRounding" time="0"/>
+  <testcase classname="TestCalculator" name="testSubtractionPositives" time="0"/>
+  <testcase classname="TestCalculator" name="testAdditionPositiveNegative" time="0"/>
+  <testcase classname="TestCalculator" name="testOverflowHandlingSubtraction" time="0"/>
+  <testcase classname="TestCalculator" name="testSubtractionNegativePositive" time="0"/>
+  <testcase classname="TestCalculator" name="testSubtractionZero" time="0"/>
+  <testcase classname="TestCalculator" name="testAdditionZero" time="0"/>
+  <testcase classname="TestCalculator" name="testAdditionLargeNumbers" time="0"/>
   <testcase classname="TestCalculator" name="testDivisionByZero" time="0"/>
-  <testcase classname="TestCalculator" name="testDivision" time="0"/>
-  <testcase classname="TestCalculator" name="testSubtraction" time="0.016"/>
+  <testcase classname="TestCalculator" name="testMultiplicationPositives" time="0"/>
+  <testcase classname="TestCalculator" name="testSubtractionNegatives" time="0.016"/>
+  <testcase classname="TestCalculator" name="testDivisionPositives" time="0"/>
+  <testcase classname="TestCalculator" name="testMultiplicationNegativePositive" time="0"/>
+  <testcase classname="TestCalculator" name="testOverflowHandlingAddition" time="0"/>
+  <testcase classname="TestCalculator" name="testSubtractionPositiveNegative" time="0"/>
+  <testcase classname="TestCalculator" name="testSubtractionLargeNumbers" time="0"/>
+  <testcase classname="TestCalculator" name="testMultiplicationNegatives" time="0"/>
+  <testcase classname="TestCalculator" name="testDivisionNegatives" time="0"/>
 </testsuite>
