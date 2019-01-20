@@ -6,7 +6,7 @@ class Controller {
 
     private Calculator calculator = new Calculator();
 
-    private int input;
+    private String input;
 
     private int value1;
 
@@ -25,12 +25,12 @@ class Controller {
         System.out.println("2) Subtraktion");
         System.out.println("3) Division");
         System.out.println("4) Multiplikation");
-        System.out.println("0) Programm beenden");
+        System.out.println("x) Programm beenden");
     }
 
     private void getOperation() {
         System.out.print("Auswahl: ");
-        input = scanner.nextInt();
+        input = scanner.nextLine();
     }
 
     private void getNumbers() {
@@ -45,38 +45,40 @@ class Controller {
         do {
             printMenu();
             getOperation();
+
+            input = input.toLowerCase().trim();
             switch (input) {
-                case 0:
+                case "x":
                     System.out.println("Beende Programm...");
                     break;
-                case 1:
-                case 2:
-                case 3:
-                case 4:
+                case "1":
+                case "2":
+                case "3":
+                case "4":
                     prepareCalculations(input);
                     break;
                 default:
                     System.out.println("Ungültige Auswahl!");
             }
-        } while (input != 0);
+        } while (!input.equals("x"));
     }
 
-    private void prepareCalculations(int input) {
+    private void prepareCalculations(String input) {
         getNumbers();
         switch (input) {
-            case 1:
+            case "1":
                 result = calculator.addition(value1, value2);
                 operation = "+";
                 break;
-            case 2:
+            case "2":
                 result = calculator.subtraction(value1, value2);
                 operation = "-";
                 break;
-            case 3:
+            case "3":
                 result = calculator.division(value1, value2);
                 operation = "/";
                 break;
-            case 4:
+            case "4":
                 result = calculator.multiplication(value1, value2);
                 operation = "*";
                 break;
